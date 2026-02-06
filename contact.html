@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("./background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      color: white;
+    }
+
+    nav {
+      padding: 12px 18px;
+      background: rgba(0,0,0,0.65);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 14px;
+      font-weight: 600;
+    }
+
+    main {
+      padding: 30px 18px;
+      max-width: 800px;
+    }
+
+    form {
+      background: rgba(0,0,0,0.65);
+      padding: 16px;
+      border-radius: 10px;
+      display: grid;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <span style="font-weight:800;">TravelBloom</span>
+    <a href="./travel_recommendation.html">Home</a>
+    <a href="./about.html">About Us</a>
+    <a href="./contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="message" rows="5" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Thank you for contacting us!");
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

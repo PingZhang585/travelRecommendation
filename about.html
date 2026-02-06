@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("./background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 18px;
+      background: rgba(0,0,0,0.65);
+    }
+
+    .nav-left a {
+      color: white;
+      text-decoration: none;
+      margin-left: 14px;
+      font-weight: 600;
+    }
+
+    main {
+      padding: 30px 18px;
+      max-width: 1100px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: center;
+      background: rgba(0,0,0,0.65);
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 260px;
+    }
+
+    .team {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.65);
+      border-radius: 10px;
+      padding: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-left">
+      <span style="font-weight:800;">TravelBloom</span>
+      <a href="./travel_recommendation.html">Home</a>
+      <a href="./about.html">About Us</a>
+      <a href="./contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>About Us</h1>
+
+    <section class="hero">
+      <div>
+        <p>
+          We help travellers discover amazing destinations through curated recommendations.
+          Search by beach, temple, or country to explore places you’ll love.
+        </p>
+        <p>
+          Our mission is to make trip planning simple, inspiring, and fun.
+        </p>
+      </div>
+
+      <!-- ✅ About image declared here -->
+      <img src="./about.jpg" alt="About TravelBloom">
+    </section>
+
+    <h2 style="margin-top:18px;">Our Team</h2>
+    <section class="team">
+      <div class="card">
+        <h3>Alex Chen</h3>
+        <p>CEO</p>
+      </div>
+      <div class="card">
+        <h3>Sophia Lee</h3>
+        <p>Travel Curator</p>
+      </div>
+      <div class="card">
+        <h3>Jordan Smith</h3>
+        <p>Software Engineer</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
